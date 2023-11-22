@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(135deg,#00feba,#5b548a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#panel{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#ptop{
+    width: 100%;
+    height: 20%;
+    background:linear-gradient(135deg,#5b548a,#00feba,#5b548a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30%;
+}
+.elem{
+    display: flex;
+    color: #494469;
+}
+.elem>h2{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.box{
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #5a5481;
+    margin-left: 1vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+#pbtm{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    color: #5a5481;
+}
+.bubble{
+    height: 3.5vw;
+    width: 3.5vw;
+    background:linear-gradient(135deg,#62c7ac,#5b548a);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-weight: 600;    
+}
+.bubble:hover{
+    color: #fff;
+    background:#5a5481;
+    cursor: pointer;
+}
