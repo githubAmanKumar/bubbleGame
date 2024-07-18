@@ -1,7 +1,9 @@
-var timer = 60;
+var timer = 10;
 var score = 0;
 var hitrn;
 var clickedVal;
+document.querySelector(".elem #highVal").innerHTML =localStorage.getItem("high");
+
 
 function makeBubble() {
     var clutter = "";
@@ -22,7 +24,11 @@ function runTimer() {
         else {
             clearInterval(timerInt);
             document.querySelector("#pbtm").innerHTML = `
-            <h2>High Score = ${score - 10}</h2>`;
+            <h2>Score = ${score - 10}</h2>`;     
+            if (localStorage.getItem("high")<(score-10)) {
+                localStorage.setItem("high",score-10);
+            }    
+            document.querySelector(".elem #highVal").innerHTML =localStorage.getItem("high");   
         }
 
     }, 1000)
@@ -31,7 +37,6 @@ function runTimer() {
 function getNewHit() {
     hitrn = `${Math.floor(Math.random() * 10)}`;
     document.querySelector('#hitVal').innerHTML = hitrn;
-    // alert(hitrn);
 }
 
 function increaseScore() {
@@ -40,7 +45,6 @@ function increaseScore() {
 }
 document.querySelector('#pbtm').addEventListener('click',function (dets){
     clickedVal = Number(dets.target.textContent);
-    // alert(clickedVal + " type " +typeof(clickedVal));
     if(clickedVal == hitrn){
         increaseScore();
         makeBubble();
