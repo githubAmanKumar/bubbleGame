@@ -16,7 +16,20 @@ Javascript, HTML, CSS...
 
 ![App Screenshot](https://raw.githubusercontent.com/githubAmanKumar/bubbleGame/main/Screenshot2.png)
 
+## Installation
+To install and run the Weather Web App locally, follow these steps:
+
+1. Clone the repository:
+
+git clone https://github.com/githubAmanKumar/bubbleGame.git
+
+
+2. Navigate to the project directory:
+
+`cd bubbleGame`
+
+3. Open html file in browser
+
 
 ## 🔗 Link
 [![BubbleGame](https://img.shields.io/badge/Game-1DA1F2?style=for-the-badge==white)](https://githubamankumar.github.io/bubbleGame/)
-
